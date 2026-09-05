@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+*.pem
+
+# Next.js
+.next/
+out/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Firebase
+firebase-service-account.json
+**/config/firebase-service-account.json
+
+# .NET
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Backend config (contains secrets)
+**/appsettings.json
+**/appsettings.*.json
+!**/appsettings.example.json
+
+# Backend debug files
+backend/run_output.txt
+backend/stderr.txt
+backend/stdout.txt
+
+# Old/alternate version
+cars24/
+
+# Vercel
+.vercel
