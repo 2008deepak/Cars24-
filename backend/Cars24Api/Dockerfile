@@ -7,5 +7,6 @@ RUN dotnet publish -c Release -o /app
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 COPY --from=build /app .
-EXPOSE 5170
+ENV ASPNETCORE_URLS=http://+:${PORT:-8080}
+EXPOSE 8080
 ENTRYPOINT ["dotnet", "Cars24Api.dll"]
